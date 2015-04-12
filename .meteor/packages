@@ -5,13 +5,21 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
-twbs:bootstrap
-ccounts-facebook
-accounts-ui
+accounts-password
+
+# UI
 jquery
 twbs:bootstrap
+fortawesome:fontawesome
+ian:accounts-ui-bootstrap-3
+
+# Development packages
+msavin:mongol
+velocity:html-reporter
+autopublish
+insecure
+
+# Production packages
 #audit-argument-checks
 #check
-velocity:html-reporter
+iron:router
