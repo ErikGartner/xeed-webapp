@@ -6,6 +6,7 @@
 
 meteor-platform
 accounts-password
+less
 
 # UI
 jquery
@@ -20,6 +21,6 @@ autopublish
 insecure
 
 # Production packages
+iron:router
 #audit-argument-checks
 #check
-iron:router
