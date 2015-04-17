@@ -7,20 +7,36 @@
 meteor-platform
 accounts-password
 less
+alanning:roles
+useraccounts:bootstrap
+iron:router
+zimme:iron-router-active
+cmather:handlebars-server
+dburles:collection-helpers
+reywood:publish-composite
+momentjs:moment
+mrt:underscore-string-latest
+matb33:collection-hooks
+dburles:factory
+anti:fake
+cunneen:mailgun
+yasinuslu:blaze-meta
+aldeed:collection2
 
 # UI
-jquery
-twbs:bootstrap
-fortawesome:fontawesome
-ian:accounts-ui-bootstrap-3
+#jquery
+#twbs:bootstrap
+#fortawesome:fontawesome
+#ian:accounts-ui-bootstrap-3
+aldeed:autoform
+mizzao:jquery-ui
 
 # Development packages
-msavin:mongol
-velocity:html-reporter
+#msavin:mongol
+#velocity:html-reporter
 autopublish
 insecure
 
 # Production packages
-iron:router
 #audit-argument-checks
 #check
