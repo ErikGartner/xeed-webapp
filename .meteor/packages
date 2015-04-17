@@ -6,6 +6,8 @@
 
 meteor-platform
 accounts-password
+accounts-facebook
+accounts-google
 less
 alanning:roles
 useraccounts:bootstrap
@@ -15,14 +17,13 @@ cmather:handlebars-server
 dburles:collection-helpers
 reywood:publish-composite
 momentjs:moment
-mrt:underscore-string-latest
 matb33:collection-hooks
 dburles:factory
 anti:fake
 cunneen:mailgun
 yasinuslu:blaze-meta
 aldeed:collection2
-accounts-facebook
+service-configuration
 
 # UI
 aldeed:autoform
