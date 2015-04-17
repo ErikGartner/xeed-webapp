@@ -22,12 +22,9 @@ anti:fake
 cunneen:mailgun
 yasinuslu:blaze-meta
 aldeed:collection2
+accounts-facebook
 
 # UI
-#jquery
-#twbs:bootstrap
-#fortawesome:fontawesome
-#ian:accounts-ui-bootstrap-3
 aldeed:autoform
 mizzao:jquery-ui
 
@@ -40,3 +37,4 @@ insecure
 # Production packages
 #audit-argument-checks
 #check
+#datariot:ganalytics
