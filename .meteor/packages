@@ -30,7 +30,7 @@ aldeed:autoform
 mizzao:jquery-ui
 
 # Development packages
-#msavin:mongol
+msavin:mongol
 #velocity:html-reporter
 autopublish
 insecure
