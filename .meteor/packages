@@ -23,11 +23,12 @@ anti:fake
 cunneen:mailgun
 yasinuslu:blaze-meta
 aldeed:collection2
-service-configuration
 
 # UI
 aldeed:autoform
 mizzao:jquery-ui
+fortawesome:fontawesome
+jparker:gravatar
 
 # Development packages
 msavin:mongol
