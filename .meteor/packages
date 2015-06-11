@@ -23,6 +23,7 @@ anti:fake
 cunneen:mailgun
 yasinuslu:blaze-meta
 aldeed:collection2
+aldeed:simple-schema
 
 # UI
 aldeed:autoform
