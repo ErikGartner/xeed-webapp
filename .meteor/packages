@@ -24,6 +24,8 @@ cunneen:mailgun
 yasinuslu:blaze-meta
 aldeed:collection2
 aldeed:simple-schema
+aldeed:autoform
+aldeed:tabular
 
 # UI
 aldeed:autoform
