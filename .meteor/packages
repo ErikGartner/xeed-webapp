@@ -32,7 +32,7 @@ aldeed:autoform
 mizzao:jquery-ui
 fortawesome:fontawesome
 jparker:gravatar
-aldeed:tabular
+aslagle:reactive-table
 
 # Development packages
 msavin:mongol
