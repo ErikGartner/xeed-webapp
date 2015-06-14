@@ -22,20 +22,21 @@ dburles:factory
 anti:fake
 cunneen:mailgun
 yasinuslu:blaze-meta
-aldeed:collection2
 aldeed:simple-schema
-aldeed:autoform
-aldeed:tabular
+aldeed:collection2
 
 # UI
 aldeed:autoform
 mizzao:jquery-ui
 fortawesome:fontawesome
 jparker:gravatar
+aldeed:tabular
 
 # Development packages
 msavin:mongol
-#velocity:html-reporter
+mike:mocha
+xolvio:cucumber
+velocity:html-reporter
 autopublish
 insecure
 
