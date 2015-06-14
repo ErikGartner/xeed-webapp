@@ -46,3 +46,6 @@ insecure
 #audit-argument-checks
 #check
 #datariot:ganalytics
+
+#Xeed packages
+smoiz:xeed-campaign
