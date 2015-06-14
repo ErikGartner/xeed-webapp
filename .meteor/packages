@@ -8,6 +8,7 @@ meteor-platform
 accounts-password
 accounts-facebook
 accounts-google
+coffeescript
 less
 alanning:roles
 useraccounts:bootstrap
