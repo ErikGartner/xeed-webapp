@@ -1,3 +1,4 @@
 [submodule "packages/xeed-campaign"]
 	path = packages/xeed-campaign
 	url = git@bitbucket.org:xeed-team/xeed-campaign.git
+	branch = develop
