@@ -37,8 +37,10 @@ aslagle:reactive-table
 # Development packages
 msavin:mongol
 mike:mocha
-xolvio:cucumber
+#xolvio:cucumber
 velocity:html-reporter
+velocity:console-reporter
+velocity:meteor-stubs
 autopublish
 insecure
 

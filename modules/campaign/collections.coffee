@@ -3,7 +3,7 @@
 # Players and gamemasters are refereced by Meteor user id.
 # @module collections
 ###
-@CampaignsCollection = new Mongo.Collection 'campaigns'
+@Campaigns = new Mongo.Collection 'campaigns'
 
 schemas =
   campaign:
@@ -24,4 +24,4 @@ schemas =
         label: 'Description'
         max: 400
 
-CampaignsCollection.attachSchema schemas.campaign
+Campaigns.attachSchema schemas.campaign

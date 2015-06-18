@@ -114,12 +114,13 @@ url@1.0.4
 useraccounts:bootstrap@1.9.1
 useraccounts:core@1.9.1
 velocity:chokidar@1.0.1_1
+velocity:console-reporter@0.1.1
 velocity:core@0.6.5
 velocity:html-reporter@0.6.1
 velocity:meteor-internals@1.1.0_7
+velocity:meteor-stubs@1.1.0
 velocity:shim@0.1.0
 webapp@1.2.0
 webapp-hashing@1.0.3
-xolvio:cucumber@0.8.0
 yasinuslu:blaze-meta@0.3.1
 zimme:iron-router-active@1.0.4
