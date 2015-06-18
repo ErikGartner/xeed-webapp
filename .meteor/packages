@@ -38,6 +38,7 @@ aslagle:reactive-table
 msavin:mongol
 mike:mocha
 #xolvio:cucumber
+velocity:core@0.6.5
 velocity:html-reporter
 velocity:console-reporter
 velocity:meteor-stubs

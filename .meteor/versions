@@ -116,7 +116,7 @@ useraccounts:core@1.9.1
 velocity:chokidar@1.0.1_1
 velocity:console-reporter@0.1.1
 velocity:core@0.6.5
-velocity:html-reporter@0.6.1
+velocity:html-reporter@0.6.2
 velocity:meteor-internals@1.1.0_7
 velocity:meteor-stubs@1.1.0
 velocity:shim@0.1.0
