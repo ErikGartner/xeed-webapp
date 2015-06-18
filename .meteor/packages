@@ -13,8 +13,8 @@ less
 alanning:roles
 useraccounts:bootstrap
 iron:router
-zimme:iron-router-active
-cmather:handlebars-server
+zimme:active-route
+zimme:iron-router-auth
 dburles:collection-helpers
 reywood:publish-composite
 momentjs:moment

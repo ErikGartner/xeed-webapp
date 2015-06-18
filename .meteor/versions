@@ -22,7 +22,6 @@ boilerplate-generator@1.0.3
 callback-hook@1.0.3
 cfs:http-methods@0.0.29
 check@1.0.5
-cmather:handlebars-server@2.0.0
 coffeescript@1.0.6
 cunneen:mailgun@0.9.1
 dburles:collection-helpers@1.0.3
@@ -38,7 +37,6 @@ fortawesome:fontawesome@4.3.0
 geojson-utils@1.0.3
 google@1.1.5
 gwendall:session-json@0.1.7
-handlebars@1.0.3
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0
@@ -108,7 +106,6 @@ templating@1.1.1
 tracker@1.0.7
 ui@1.0.6
 underscore@1.0.3
-underscorestring:underscore.string@3.0.3
 url@1.0.4
 useraccounts:bootstrap@1.9.1
 useraccounts:core@1.9.1
@@ -122,4 +119,5 @@ velocity:shim@0.1.0
 webapp@1.2.0
 webapp-hashing@1.0.3
 yasinuslu:blaze-meta@0.3.1
-zimme:iron-router-active@1.0.4
+zimme:active-route@2.1.0
+zimme:iron-router-auth@3.1.0
