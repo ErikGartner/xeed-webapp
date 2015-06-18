@@ -41,7 +41,7 @@ MochaWeb?.testOnly ->
     it 'should not accept dicts with less than 1 gamemasters', ->
 
       data =
-        Name: 'DC'
+        name: 'DC'
         players: ['1']
         gamemasters: []
         description: 'VtM in DC'

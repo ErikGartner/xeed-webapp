@@ -18,7 +18,7 @@ schemas =
       gamemasters:
         type: [String]
         label: 'Gamemasters'
-        min: 1
+        minCount: 1
       description:
         type: String
         label: 'Description'
