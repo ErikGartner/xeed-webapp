@@ -46,4 +46,5 @@ MochaWeb?.testOnly ->
         gamemasters: []
         description: 'VtM in DC'
 
-      chai.expect(-> Campaigns.insert data).to.throw()
+      chai.expect(-> Campaigns.insert data).to.throw(
+        'You must specify at least 1 values')
