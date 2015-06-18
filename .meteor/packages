@@ -42,7 +42,7 @@ velocity:core@0.6.5
 velocity:html-reporter
 velocity:console-reporter
 velocity:meteor-stubs
-autopublish
+#autopublish
 insecure
 
 # Production packages
