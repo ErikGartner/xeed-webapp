@@ -1,9 +1,10 @@
 AccountsTemplates.configureRoute 'signIn',
   layoutTemplate: 'publicLayout'
-  redirect: '/dashboard'
+  redirect: '/'
 
 AccountsTemplates.configureRoute 'signUp',
   layoutTemplate: 'publicLayout'
-  redirect: '/dashboard'
+  redirect: '/'
 
-AccountsTemplates.configureRoute 'ensureSignedIn', layoutTemplate: 'publicLayout'
+AccountsTemplates.configureRoute 'ensureSignedIn',
+  layoutTemplate: 'publicLayout'

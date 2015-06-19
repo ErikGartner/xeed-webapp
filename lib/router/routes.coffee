@@ -1,7 +1,12 @@
-Router.route '/',
+Router.route '/home',
   name: 'home'
-  layoutTemplate: 'publicLayout'
 
-Router.route '/dashboard', name: 'dashboard'
+Router.route '/',( ->
+  if Meteor.userId() != null
+    @redirect '/campaigns'
+  else
+    @redirect '/home'
+  ),
+  name: 'app'
 
-Router.plugin 'ensureSignedIn', only: [ 'dashboard', 'campaigns' ]
+Router.plugin 'ensureSignedIn', only: ['campaigns' ]
