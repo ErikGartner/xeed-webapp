@@ -14,10 +14,12 @@
 
         <!-- Main content -->
         <section class="content">
-
-          {{> tabular table=TabularTables.Campaigns class="table table-striped table-bordered table-condensed"}}
-          {{> createCampaign}}
-
+          <div class="row">
+            <div class="col-md-12">
+              {{> tabular table=TabularTables.Campaigns class="table table-striped table-bordered table-condensed responsive"}}
+              {{> createCampaign}}
+            </div>
+          </div>
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
 </template>
