@@ -15,11 +15,8 @@
         <!-- Main content -->
         <section class="content">
 
-          <ul>
-            {{#each campaigns}}
-              <li>{{name}}</li>
-            {{/each}}
-          </ul>
+          {{> reactiveTable collection=campaignsCollection}}
+          {{> createCampaign}}
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->

@@ -33,6 +33,7 @@ mizzao:jquery-ui
 fortawesome:fontawesome
 jparker:gravatar
 aslagle:reactive-table
+tap:i18n-ui
 
 # Development packages
 msavin:mongol
@@ -43,7 +44,7 @@ velocity:html-reporter
 velocity:console-reporter
 velocity:meteor-stubs
 #autopublish
-insecure
+#insecure
 
 # Production packages
 #audit-argument-checks

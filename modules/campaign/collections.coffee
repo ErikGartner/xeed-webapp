@@ -15,6 +15,7 @@ schemas =
       players:
         type: [String]
         label: 'Players'
+        minCount: 0
       gamemasters:
         type: [String]
         label: 'Gamemasters'
@@ -25,3 +26,8 @@ schemas =
         max: 400
 
 Campaigns.attachSchema schemas.campaign
+
+Campaigns.allow(
+  insert: (userId, doc) ->
+    return userId;
+)
