@@ -29,5 +29,5 @@ Campaigns.attachSchema schemas.campaign
 
 Campaigns.allow(
   insert: (userId, doc) ->
-    return userId;
+    return userId
 )
