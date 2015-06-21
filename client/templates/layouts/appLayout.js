@@ -1,4 +1,4 @@
-Template.appLayout.rendered = function(){
+Template.appLayout.onRendered(function(){
   /*! AdminLTE app.js
    * ================
    * Main JS application file for AdminLTE v2. This file
@@ -333,9 +333,9 @@ Template.appLayout.rendered = function(){
         });
 
         //Enable expand on hover for sidebar mini
-        if ($.AdminLTE.options.sidebarExpandOnHover
-                || ($('body').hasClass('fixed')
-                        && $('body').hasClass('sidebar-mini'))) {
+        if ($.AdminLTE.options.sidebarExpandOnHover ||
+            ($('body').hasClass('fixed') &&
+            $('body').hasClass('sidebar-mini'))) {
           this.expandOnHover();
         }
 
@@ -702,4 +702,4 @@ Template.appLayout.rendered = function(){
     };
   }(jQuery));
 
-};
+});
