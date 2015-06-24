@@ -15,7 +15,7 @@ schemas =
       players:
         type: [String]
         label: 'Players'
-        minCount: 0
+        optional: true
       gamemasters:
         type: [String]
         label: 'Gamemasters'
@@ -24,6 +24,7 @@ schemas =
         type: String
         label: 'Description'
         max: 400
+        optional: true
 
 Campaigns.attachSchema schemas.campaign
 
