@@ -1,12 +1,13 @@
 TabularTables.Campaigns = new Tabular.Table(
-  name: "Campaigns"
+  name: 'Campaigns'
   collection: Campaigns
   selector: (userId) ->
-    return {$or: [{players: userId}, {gamemasters: userId}]}
+    return $or: [players: userId, gamemasters: userId]
+  extraFields: ['gamemasters', 'players']
   columns: [
-    {data: "name", title: "Name"}
-    {data: "gamemasters", title: "Gamemasters"}
-    {data: "players", title: "Players"}
-    {data: "description", title: "Description"}
+    {data: 'name', title: 'Name'}
+    {data: 'gamemasterNames()', title: 'Gamemasters'}
+    {data: 'playerNames()', title: 'Players'}
+    {data: 'description', title: 'Description'}
   ]
 )
