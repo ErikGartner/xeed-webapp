@@ -32,3 +32,15 @@ Campaigns.allow(
   insert: (userId, doc) ->
     return userId
 )
+
+Campaigns.helpers
+  gamemasterNames: ->
+    users = Meteor.users.find _id: $in: @gamemasters
+    return users.map (doc, index, cursor) ->
+      return doc.profile.name
+
+Campaigns.helpers
+  playerNames: ->
+    users = Meteor.users.find _id: $in: @players
+    return users.map (doc, index, cursor) ->
+      return doc.profile.name
