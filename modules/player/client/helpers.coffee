@@ -3,8 +3,7 @@ Template.registerHelper 'avatarUrl', (imgSize) ->
     size: imgSize
     default: 'mm'
     secure: true
-
-  email = Meteor.user()?.emails[0]?.address ?= ''
+  email = Meteor.user()?.emails[0]?.address ?= Gravatar.hash ''
   return Gravatar.imageUrl email, conf
 
 Template.registerHelper 'isOnline', ->
