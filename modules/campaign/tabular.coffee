@@ -1,6 +1,7 @@
 TabularTables.Campaigns = new Tabular.Table(
   name: 'Campaigns'
   collection: Campaigns
+  pub: 'tabular_Campaigns'
   selector: (userId) ->
     return $or: [players: userId, gamemasters: userId]
   extraFields: ['gamemasters', 'players']
