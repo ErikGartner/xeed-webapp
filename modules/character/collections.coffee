@@ -18,6 +18,7 @@ schemas =
       description:
         type: String
         label: 'Description'
+        optional: true
 
 Characters.attachSchema schemas.character
 
