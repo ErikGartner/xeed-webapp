@@ -36,8 +36,7 @@ tap:i18n-ui
 
 # Development packages
 msavin:mongol
-mike:mocha
-#xolvio:cucumber
+sanjo:jasmine
 velocity:core@0.6.5
 velocity:html-reporter
 velocity:console-reporter
