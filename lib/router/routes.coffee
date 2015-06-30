@@ -9,4 +9,4 @@ Router.route '/',( ->
   ),
   name: 'app'
 
-Router.plugin 'ensureSignedIn', only: ['campaigns' ]
+Router.plugin 'ensureSignedIn', only: ['campaigns', 'characters']
