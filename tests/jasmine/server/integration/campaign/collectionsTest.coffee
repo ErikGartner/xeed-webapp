@@ -1,4 +1,4 @@
-describe 'Campaigns collection', ->
+xdescribe 'Campaigns collection', ->
 
   beforeEach ->
     Campaigns.remove {}

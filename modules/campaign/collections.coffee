@@ -12,14 +12,27 @@ schemas =
         type: String
         label: 'Name'
         max: 200
+
       players:
         type: [String]
         label: 'Players'
         optional: true
+        custom: ->
+          if Meteor.isServer
+            users = Meteor.users.find _id: $in: @value
+            if users.count() != @value.length
+              return 'invalid-foreign-key'
+
       gamemasters:
         type: [String]
         label: 'Gamemasters'
         minCount: 1
+        custom: ->
+          if Meteor.isServer
+            users = Meteor.users.find _id: $in: @value
+            if users.count() != @value.length
+              return 'invalid-foreign-key'
+
       description:
         type: String
         label: 'Description'
