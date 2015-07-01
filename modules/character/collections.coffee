@@ -17,14 +17,14 @@ schemas =
         type: String
         label: 'Campaign'
         custom: ->
-          campaign = Campaigns.findOne _id: @value
-          if not campaign?
-            return 'nvalid-foreign-key'
+          if Meteor.isServer
+            campaign = Campaigns.findOne _id: @value
+            if not campaign?
+              return 'invalid-foreign-key'
 
-          if  not (_.contains campaign.gamemasters, @userId or
-                   _.contains campaign.players, @userId)
-            return 'invalid-foreign-key'
-          return
+            if  not (_.contains campaign.gamemasters, @userId or
+                     _.contains campaign.players, @userId)
+              return 'invalid-foreign-key'
 
       description:
         type: String
