@@ -12,9 +12,20 @@ schemas =
         type: String
         label: 'Name'
         max: 200
+
       campaign:
         type: String
         label: 'Campaign'
+        custom: ->
+          campaign = Campaigns.findOne _id: @value
+          if not campaign?
+            return 'nvalid-foreign-key'
+
+          if  not (_.contains campaign.gamemasters, @userId or
+                   _.contains campaign.players, @userId)
+            return 'invalid-foreign-key'
+          return
+
       description:
         type: String
         label: 'Description'
