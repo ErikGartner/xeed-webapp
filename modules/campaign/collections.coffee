@@ -17,8 +17,10 @@ schemas =
         type: [String]
         label: 'Players'
         optional: true
+        defaultValue: []
         custom: ->
           if Meteor.isServer
+            console.log @value
             users = Meteor.users.find _id: $in: @value
             if users.count() != @value.length
               return 'invalid-foreign-key'
@@ -29,6 +31,9 @@ schemas =
         minCount: 1
         custom: ->
           if Meteor.isServer
+            if not _.contains(@value, @userId)
+              return 'invalid-foreign-key'
+
             users = Meteor.users.find _id: $in: @value
             if users.count() != @value.length
               return 'invalid-foreign-key'
@@ -37,7 +42,7 @@ schemas =
         type: String
         label: 'Description'
         max: 400
-        optional: true
+        min: 0
 
 Campaigns.attachSchema schemas.campaign
 

@@ -30,6 +30,7 @@ schemas =
         type: String
         label: 'Description'
         optional: true
+        defaultValue: ''
 
 Characters.attachSchema schemas.character
 

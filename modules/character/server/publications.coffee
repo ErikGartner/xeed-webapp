@@ -5,7 +5,8 @@ Meteor.publishComposite 'tabular_Characters', (tableName, ids, tableFields) ->
 
   return {
     find: ->
-      return Campaigns.find $or: [players: @userId, gamemasters: @userId]
+      return Campaigns.find $or: [players: @userId,
+                                  gamemasters: @userId]
 
     children: [
       {
