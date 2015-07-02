@@ -1,6 +1,8 @@
 Template.selectCampaign.events
-  'click tbody > tr': (event) ->
-    dataTable = $(event.target).closest('table').DataTable()
-    rowData = dataTable.row(event.currentTarget).data()
-    Session.set('activeCampaign', rowData._id)
+  'click .campaign-item': (event) ->
+    Session.set('activeCampaign', event.target.dataset.id)
     $('#selectCampaign').modal('hide')
+
+Template.selectCampaign.helpers
+  campaigns: () ->
+    return Campaigns.find {}

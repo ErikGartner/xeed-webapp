@@ -1,3 +1,7 @@
+Meteor.publish 'userCampaigns', ->
+  return Campaigns.find $or: [gamemasters: @userId,
+                              players: @userId]
+
 Meteor.publishComposite 'tabular_Campaigns', (tableName, ids, tableFields) ->
   check tableName, String
   check ids, Array

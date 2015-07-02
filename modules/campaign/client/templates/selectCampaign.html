@@ -10,16 +10,23 @@
   </ol>
 
   <div class="modal fade" id="selectCampaign" tabindex="-1" role="dialog" aria-labelledby="selectCampaignModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="selectCampaignModalLabel">{{_"select campaign"}}</h4>
         </div>
 
-        <div class="modal-body">
-          {{> tabular table=TabularTables.Campaigns class="table table-hover responsive"}}
-        </div>
+        <ul class="products-list">
+          {{#each campaigns}}
+          <li class="item">
+            <div class="product-info">
+              <a href="#" class="product-title campaign-item" data-id="{{_id}}">{{name}}</a>
+              <span class="product-description">{{description}}</span>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
 
       </div>
     </div>
