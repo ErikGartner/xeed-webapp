@@ -1,3 +1,3 @@
 Meteor.startup ->
-  $('body').addClass 'skin-blue'
+  $('body').addClass 'skin-xeed'
   return
