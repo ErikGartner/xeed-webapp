@@ -11,6 +11,7 @@ AutoForm.hooks
         Meteor.call 'mapUserIdsToEmail', userEmails, (err, res) ->
           doc.gamemasters = _.map doc.gamemasters, (val) ->
             return res[val]
+          doc.gamemasters = _.union doc.gamemasters, Meteor.userId()
           doc.players = _.map doc.players, (val) ->
             return res[val]
           context.result doc
