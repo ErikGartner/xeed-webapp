@@ -20,7 +20,6 @@ schemas =
         defaultValue: []
         custom: ->
           if Meteor.isServer
-            console.log @value
             users = Meteor.users.find _id: $in: @value
             if users.count() != @value.length
               return 'invalid-foreign-key'
