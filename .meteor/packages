@@ -5,6 +5,7 @@
 # but you can also edit it by hand.
 
 meteor-platform
+service-configuration
 accounts-password
 accounts-facebook
 accounts-google
@@ -13,14 +14,12 @@ less
 alanning:roles
 useraccounts:bootstrap
 iron:router
-zimme:iron-router-active
-cmather:handlebars-server
+zimme:active-route
+#zimme:iron-router-auth
 dburles:collection-helpers
 reywood:publish-composite
 momentjs:moment
 matb33:collection-hooks
-dburles:factory
-anti:fake
 cunneen:mailgun
 yasinuslu:blaze-meta
 aldeed:simple-schema
@@ -32,20 +31,24 @@ aldeed:autoform
 mizzao:jquery-ui
 fortawesome:fontawesome
 jparker:gravatar
-aslagle:reactive-table
+aldeed:tabular
+tap:i18n-ui
 
 # Development packages
 msavin:mongol
-mike:mocha
-xolvio:cucumber
+sanjo:jasmine
+velocity:core@0.6.5
 velocity:html-reporter
-autopublish
-insecure
+velocity:console-reporter
+velocity:meteor-stubs
+dburles:factory
+anti:fake
+#autopublish
+#insecure
 
 # Production packages
 #audit-argument-checks
 #check
 #datariot:ganalytics
 
-#Xeed packages
-smoiz:xeed-campaign
+# XEED packages

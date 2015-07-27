@@ -1,0 +1,31 @@
+<template name="createCharacter">
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addCharacterModal">
+    {{_"add"}}
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="addCharacterModal" tabindex="-1" role="dialog" aria-labelledby="addCharacterModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="addCharacterModalLabel">{{_"create character"}}</h4>
+        </div>
+
+        {{#autoForm collection="Characters" id="characterForm" type="insert"}}
+          <div class="modal-body">
+            <fieldset>
+                {{> afQuickField name="name"}}
+                {{> afQuickField name="description" rows=5}}
+            </fieldset>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">{{_"close"}}</button>
+            <button type="submit" class="btn btn-primary">{{_"add"}}</button>
+          </div>
+        {{/autoForm}}
+
+      </div>
+    </div>
+  </div>
+</template>
