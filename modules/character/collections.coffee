@@ -5,34 +5,32 @@
 ###
 @Characters = new Mongo.Collection 'characters'
 
-schemas =
-  character:
-    new SimpleSchema
-      name:
-        type: String
-        label: 'Name'
-        max: 200
+Schemas.character = new SimpleSchema
+  name:
+    type: String
+    label: 'Name'
+    max: 200
 
-      campaign:
-        type: String
-        label: 'Campaign'
-        custom: ->
-          if Meteor.isServer
-            campaign = Campaigns.findOne _id: @value
-            if not campaign?
-              return 'invalid-foreign-key'
+  campaign:
+    type: String
+    label: 'Campaign'
+    custom: ->
+      if Meteor.isServer
+        campaign = Campaigns.findOne _id: @value
+        if not campaign?
+          return 'invalid-foreign-key'
 
-            if  not (_.contains campaign.gamemasters, @userId or
-                     _.contains campaign.players, @userId)
-              return 'invalid-foreign-key'
+        if  not (_.contains campaign.gamemasters, @userId or
+                 _.contains campaign.players, @userId)
+          return 'invalid-foreign-key'
 
-      description:
-        type: String
-        label: 'Description'
-        optional: true
-        defaultValue: ''
+  description:
+    type: String
+    label: 'Description'
+    optional: true
+    defaultValue: ''
 
-Characters.attachSchema schemas.character
+Characters.attachSchema Schemas.character
 
 Characters.allow(
   insert: (userId, doc) ->
