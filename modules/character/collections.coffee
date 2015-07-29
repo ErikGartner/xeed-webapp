@@ -6,11 +6,6 @@
 @Characters = new Mongo.Collection 'characters'
 
 Schemas.character = new SimpleSchema
-  name:
-    type: String
-    label: 'Name'
-    max: 200
-
   campaign:
     type: String
     label: 'Campaign'
@@ -24,11 +19,18 @@ Schemas.character = new SimpleSchema
                  _.contains campaign.players, @userId)
           return 'invalid-foreign-key'
 
-  description:
+  template:
     type: String
-    label: 'Description'
-    optional: true
-    defaultValue: ''
+    label: 'Template'
+    custom: ->
+      if Meteor.isServer
+        template = Templates.findOne _id: @value
+        if not template?
+          return 'invalid-foreign-key'
+
+  data:
+    type: Object
+    blackbox: true
 
 Characters.attachSchema Schemas.character
 
