@@ -19,6 +19,10 @@ Schemas.templateItem = new SimpleSchema
     type: String
     label: 'Item type'
 
+Schemas.templateItem.subitems =
+  type: [Schemas.templateItem]
+  minCount: 0
+
 Schemas.template = new SimpleSchema
   name:
     type: String
@@ -40,9 +44,9 @@ Schemas.template = new SimpleSchema
     optional: true
     defaultValue: ''
 
-  item:
-    label: 'Schema'
-    type: Schemas.templateItem
+  items:
+    label: 'Fields'
+    type: [Schemas.templateItem]
     blackbox: true
 
 Templates.attachSchema Schemas.template
