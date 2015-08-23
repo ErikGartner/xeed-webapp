@@ -34,6 +34,7 @@ jparker:gravatar
 aldeed:tabular
 tap:i18n-ui
 useraccounts:bootstrap
+matteodem:gridster
 
 # Development packages
 msavin:mongol
