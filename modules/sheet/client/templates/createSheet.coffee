@@ -1,25 +1,25 @@
 Template.createSheet.onRendered ->
   gridster = $('.gridster > ul').gridster(
     widget_margins: [5, 5]
-    widget_base_dimensions: [100, 55]
+    widget_base_dimensions: [200, 70]
     widget_selector: 'gridster-box'
+    min_cols: 3
+    max_cols: 3
     resize:
       enabled: true
   ).data('gridster')
 
-  widgets = [
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-    ['<div class="gridster-box">0</div>', 1, 2],
-  ]
+Template.createSheet.events
+  'click #add-text-field': ->
+    $('.gridster > ul').data('gridster').add_widget Blaze.toHTMLWithData(
+      Template.xeed_itembox, itemTemplate: 'xeed_textbox')
 
-  $.each widgets, (i, widget) ->
-    gridster.add_widget.apply gridster, widget
+AutoForm.addHooks 'sheetForm',
+  before:
+    insert: (doc) ->
+      doc.author = Meteor.userId()
+      doc.items = []
+      doc.layout = $('.gridster > ul').data('gridster').serialize()
+
+      console.log doc
+      return doc

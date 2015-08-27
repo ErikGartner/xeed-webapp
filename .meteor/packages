@@ -28,7 +28,6 @@ tap:i18n
 
 # UI
 aldeed:autoform
-mizzao:jquery-ui
 fortawesome:fontawesome
 jparker:gravatar
 aldeed:tabular

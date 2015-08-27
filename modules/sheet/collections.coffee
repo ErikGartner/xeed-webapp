@@ -47,7 +47,8 @@ Schemas.sheet = new SimpleSchema
   items:
     label: 'Fields'
     type: [Schemas.sheetItem]
-    blackbox: true
+    optional: true
+    minCount: 0
 
 Sheets.attachSchema Schemas.sheet
 
