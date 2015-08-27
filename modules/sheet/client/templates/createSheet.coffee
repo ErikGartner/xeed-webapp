@@ -1,4 +1,4 @@
-Template.createTemplate.onRendered ->
+Template.createSheet.onRendered ->
   gridster = $('.gridster > ul').gridster(
     widget_margins: [5, 5]
     widget_base_dimensions: [100, 55]
