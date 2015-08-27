@@ -12,7 +12,7 @@ accounts-google
 coffeescript
 less
 alanning:roles
-useraccounts:bootstrap
+useraccounts:iron-routing
 iron:router
 zimme:active-route
 #zimme:iron-router-auth
@@ -33,6 +33,7 @@ fortawesome:fontawesome
 jparker:gravatar
 aldeed:tabular
 tap:i18n-ui
+useraccounts:bootstrap
 
 # Development packages
 msavin:mongol
