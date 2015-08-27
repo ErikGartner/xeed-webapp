@@ -3,9 +3,9 @@
 # Authors are refereced by Meteor user id.
 # @module collections
 ###
-@Templates = new Mongo.Collection 'templates'
+@Sheets = new Mongo.Collection 'sheets'
 
-Schemas.templateItem = new SimpleSchema
+Schemas.sheetItem = new SimpleSchema
   name:
     type: String
     label: 'Name'
@@ -19,11 +19,11 @@ Schemas.templateItem = new SimpleSchema
     type: String
     label: 'Item type'
 
-Schemas.templateItem.subitems =
-  type: [Schemas.templateItem]
+Schemas.sheetItem.subitems =
+  type: [Schemas.sheetItem]
   minCount: 0
 
-Schemas.template = new SimpleSchema
+Schemas.sheet = new SimpleSchema
   name:
     type: String
     label: 'Name'
@@ -46,12 +46,12 @@ Schemas.template = new SimpleSchema
 
   items:
     label: 'Fields'
-    type: [Schemas.templateItem]
+    type: [Schemas.sheetItem]
     blackbox: true
 
-Templates.attachSchema Schemas.template
+Sheets.attachSchema Schemas.sheet
 
-Templates.allow(
+Sheets.allow(
   insert: (userId, doc) ->
     return userId
 )

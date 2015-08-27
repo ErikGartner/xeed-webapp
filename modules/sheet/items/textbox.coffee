@@ -1,4 +1,4 @@
-@TemplateItems =
+@SheetItems =
   textbox:
     name: 'Text box'
     description: 'A multiline textbox'
