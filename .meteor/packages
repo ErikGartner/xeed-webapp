@@ -28,12 +28,12 @@ tap:i18n
 
 # UI
 aldeed:autoform
-mizzao:jquery-ui
 fortawesome:fontawesome
 jparker:gravatar
 aldeed:tabular
 tap:i18n-ui
 useraccounts:bootstrap
+matteodem:gridster
 
 # Development packages
 msavin:mongol
@@ -51,5 +51,3 @@ anti:fake
 #audit-argument-checks
 #check
 #datariot:ganalytics
-
-# XEED packages

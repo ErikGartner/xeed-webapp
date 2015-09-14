@@ -299,6 +299,9 @@
                 <li class="{{ isActiveRoute name='campaigns'}}"><a href="{{ pathFor 'campaigns'}}"><span>{{_"campaigns"}}</span></a>
                 </li>
 
+                <li class="{{ isActiveRoute name='sheets'}}"><a href="{{ pathFor 'sheets'}}"><span>{{_"sheets"}}</span></a>
+                </li>
+                
                 {{#if activeCampaign}}
                   <li class="header">{{ activeCampaignName }}</li>
                   <li class="{{ isActiveRoute name='characters'}}"><a href="{{ pathFor 'characters'}}"><span>{{_"characters"}}</span></a>
