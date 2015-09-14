@@ -10,11 +10,7 @@ Schemas.sheetItem = new SimpleSchema
     type: String
     label: 'Name'
     max: 50
-
-  description:
-    type: String
-    label: 'Description'
-
+    
   type:
     type: String
     label: 'Item type'
