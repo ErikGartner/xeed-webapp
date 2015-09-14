@@ -10,10 +10,16 @@ Schemas.sheetItem = new SimpleSchema
     type: String
     label: 'Name'
     max: 50
-    
+
   type:
     type: String
     label: 'Item type'
+
+  data:
+    type: [Object]
+    label: 'Item data'
+    blackbox: true
+    optional: true
 
 Schemas.sheetItem.subitems =
   type: [Schemas.sheetItem]
@@ -52,3 +58,8 @@ Sheets.allow(
   insert: (userId, doc) ->
     return userId
 )
+
+Sheets.helpers
+  authorName: ->
+    user = Meteor.users.findOne _id: @author
+    return user?.profile.name

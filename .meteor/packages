@@ -34,7 +34,6 @@ aldeed:tabular
 tap:i18n-ui
 useraccounts:bootstrap
 matteodem:gridster
-#natestrauser:x-editable-bootstrap
 
 # Development packages
 msavin:mongol
