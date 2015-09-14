@@ -19,7 +19,7 @@ addWidget = (type) ->
   Blaze.renderWithData(Template.xeed_devbox, {itemTemplate: template, id: id},
     $('#widget' + id)[0])
   items = Session.get('items')
-  items.push(type: type, name: '', id: id)
+  items.push(type: type, name: @SheetItems[type].name, id: id)
   Session.set('items', items)
   return
 
