@@ -1,8 +1,8 @@
 @SheetItems =
-  textbox:
-    name: 'Textbox'
-    description: 'A multiline textbox'
-    template: 'xeed_textbox'
+  textfield:
+    name: 'Textfield'
+    description: 'A single line textfield'
+    template: 'xeed_textfield'
     validator: new SimpleSchema
       value:
         type: String

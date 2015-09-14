@@ -38,7 +38,7 @@ Template.createSheet.onRendered ->
 
 Template.createSheet.events
   'click #add-text-field': ->
-    addWidget('textbox')
+    addWidget('textfield')
 
 AutoForm.addHooks 'sheetForm',
   before:
