@@ -14,8 +14,10 @@ addWidget = (type) ->
   id = Session.get('next-id')
   Session.set('next-id', id + 1)
   template = @SheetItems[type].template
-  $('.gridster > ul').data('gridster').add_widget Blaze.toHTMLWithData(
-    Template.xeed_itembox, {itemTemplate: template, id: id})
+  $('.gridster > ul').data('gridster').add_widget '<div id="widget' + id +
+    '" class="gridster-box container"></div>'
+  Blaze.renderWithData(Template.xeed_devbox, {itemTemplate: template, id: id},
+    $('#widget' + id)[0])
   items = Session.get('items')
   items.push(type: type, name: '', description: '', id: id)
   Session.set('items', items)

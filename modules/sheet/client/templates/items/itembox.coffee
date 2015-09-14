@@ -1,3 +1,2 @@
-Template.xeed_itembox.onRendered ->
-  console.log 'hello'
+Template.xeed_devbox.onRendered ->
   $('.editable').editable()
