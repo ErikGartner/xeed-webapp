@@ -1,5 +1,6 @@
 XEED
 =========
+***This project was intended to replace the desktop app, but this is now abandoned. Use the old [XEED](https://github.com/ErikGartner/xeed) instead.***
 The webapp and backend to XEED. An online service for handling roleplaying settings.
 
 ## Installation
